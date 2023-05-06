@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  main:
+    build: .
+    tty: true
+  rabbitmq:
+    image: rabbitmq:3.7.2-management
+    ports:
+      - "15672:15672"
+  
